@@ -1,6 +1,6 @@
  ## Polymorphism is typically achieved through method overriding and interfaces
 
-## Method ovveriding
+## Method overiding
 class Animal:
     def speak(self):
         return "animal sound "
