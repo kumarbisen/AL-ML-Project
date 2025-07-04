@@ -57,5 +57,33 @@ print_area(rect)
 
 
 ## polymorphism with Abstract base classes
- 
+from abc import ABC,abstractmethod
+
+# Define an abstact class
+class Vehicle(ABC):
+    @abstractmethod
+
+    def start_engine(self):
+       pass
+## Derived class 1
+
+class Car(Vehicle):
+    def start_engine(self):
+        return "car engines started"
+
+# Derived class 2
+class Motorcycle(Vehicle):
+    def start_engine(self):
+        return "Motorcycle engines started"
+# function that demonstrate polymorphism
+def start_vehicle(vehicle):
+    print(vehicle.start_engine())
+
+
+car = Car()
+moto = Motorcycle()
+start_vehicle(car)
+start_vehicle(moto)
+
+
        
